@@ -16,6 +16,9 @@ pipeline {
     }
 
     post {
+        always {
+            echo 'all done!'
+        }
         success {
             echo 'Pipeline executed successfully!'
         }
